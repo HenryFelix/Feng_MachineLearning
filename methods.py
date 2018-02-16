@@ -6,6 +6,9 @@ print(a.capitalize())
 print(a.upper())
 print(a.lower())
 print(a.casefold())
+print("ABCD1234abcd".swapcase())
+print("ABCD1234abcd".title())
+print("ABCD1234abcd".upper())
 
 # str plus str.
 a1 ="I love python2 !"
@@ -34,11 +37,13 @@ print(a4.find('y',2,10))
 print(a4.index('o'))
 
 #check str whether number or str.
-a5 = "Iove1a2agkja12"
+a5 = "abcdef1233"
 print(a5.isalnum()) #str and number
 print(a5.isalpha()) #str
 print(a5.isdecimal()) #number
 print(a5.isdigit()) # number
+print(a5.isnumeric())
+print(a5.isprintable())
 
 #check variable is true or false
 print("a8".isidentifier()) 
@@ -58,12 +63,57 @@ print(" python ".join(a7))
 
 # make left
 print('abc'.ljust(10,'*'))
+print('abc'.rjust(10,'*'))
+print('aaa'.zfill(10))
 
 #replace
 a8 = "aeious"
 a9 = "123456"
 print("my cat is a cute cat".translate(str.maketrans(a8,a9)))
 print("my cat is a cute cat".translate(str.maketrans({'a':'2','e':'1'})))
+print("aaaa".replace('a','1'))
+print("aaaa".replace('a','1',3))
+print("aaaaa".replace('aa','22',1))
+print("ababa1212".translate({97:"F"}))
+
+#slice
+print("ABCD1234abcd".partition("B"))
+print("ABCD1234abcd".rpartition("B"))
+
+#find
+print('ABCD1234abcd'.rfind('C'))
+print('ABCD1234abcd'.rindex('C'))
+
+#split
+print("AB CD 12 34 ab cd".rsplit(maxsplit=3))
+print("AB CD 12 34 ab cd".split(maxsplit=3))
+print("A,C,1,3,a,123".split(',',4))
+
+#delete
+print('***aeious'.rstrip('us')) #right
+print("    Aaaa  ".strip())
+print("***aaa***".strip('*'))
+
+#split again
+a101 = "abcd1\n12324\nkagcnajk\n"
+print(a101.splitlines())
+print(a101.splitlines(keepends=True))
+
+#start
+print("ABCD1234abcd".startswith('A',0,3))
+print("ABCD1234abcd".startswith('bbb'))
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
