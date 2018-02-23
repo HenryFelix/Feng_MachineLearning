@@ -103,7 +103,61 @@ print(a101.splitlines(keepends=True))
 print("ABCD1234abcd".startswith('A',0,3))
 print("ABCD1234abcd".startswith('bbb'))
 
-
+"""
+I love python!
+I LOVE PYTHON!
+i love python!
+i love python!
+abcd1234ABCD
+Abcd1234Abcd
+ABCD1234ABCD
+I love python2 !I love ruby !
+I lovuby 
+**I love python2 !**
+2
+True
+True
+tab       tab!
+abc
+8
+3
+True
+False
+False
+False
+False
+True
+True
+False
+False
+False
+True
+a python b python c python d
+abc*******
+*******abc
+0000000aaa
+my c1t 36 1 c5t2 c1t
+my c2t is 2 cut1 c2t
+1111
+111a
+22aaa
+FbFbF1212
+('A', 'B', 'CD1234abcd')
+('A', 'B', 'CD1234abcd')
+2
+2
+['AB CD 12', '34', 'ab', 'cd']
+['AB', 'CD', '12', '34 ab cd']
+['A', 'C', '1', '3', 'a,123']
+***aeio
+Aaaa
+aaa
+['abcd1', '12324', 'kagcnajk']
+['abcd1\n', '12324\n', 'kagcnajk\n']
+True
+False
+[Finished in 0.1s]
+"""
 
 
 
